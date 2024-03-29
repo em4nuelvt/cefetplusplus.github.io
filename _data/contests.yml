@@ -1,0 +1,150 @@
+- name: "IX Maratona Mineira de Programação"
+  date: "2022-05-28"
+  location:
+    pt_BR: "Timóteo, MG, Brasil"
+    en: "Timóteo, MG, Brazil"
+  teams:
+    - name: "Technomancers"
+      rank: 
+        - "26º de 51 times"
+      prizes:
+        - "Melhor time estreante"
+      students:
+        - "Gabriel de Souza Rosa"
+        - "Yuri Dimitre Dias de Faria"
+        - "Vitor Martins Soares"
+    - name: "P versus NP"
+      rank: 
+        - "36º de 51 times"
+      prizes:
+      students:
+        - "Gabriel Couto Assis"
+        - "Leonardo de Oliveira Campos"
+        - "Pedro Henrique Rodrigues Pereira"
+
+- name: "Fase Zero da Maratona SBC de Programação"
+  date: "2022-09-24"
+  location:
+    pt_BR: "Beecrowd (online)"
+    en: "Beecrowd (online)"
+  teams:
+    - name: "Technomancers"
+      rank: 
+        - "78º de 340 times (Top 100)"
+      prizes:
+      students:
+        - "Gabriel de Souza Rosa"
+        - "Yuri Dimitre Dias de Faria"
+        - "Vitor Martins Soares"
+    - name: "P versus NP"
+      rank: 
+        - "133º de 340 times"
+      prizes:
+      students:
+        - "Gabriel Couto Assis"
+        - "Leonardo de Oliveira Campos"
+        - "Pedro Henrique Rodrigues Pereira"
+
+- name: "XVII Maratona SBC de Programação: Primeira Fase"
+  date: "2022-10-08"
+  location:
+    pt_BR: "Belo Horizonte, MG, Brasil"
+    en: "Belo Horizonte, MG, Brazil"
+  teams:
+    - name: "Technomancers"
+      rank: 
+        - "14º de 31 times (Sede BR-MG-BH)"
+        - "228º de 524 times (BR)"
+      prizes:
+      students:
+        - "Gabriel de Souza Rosa"
+        - "Yuri Dimitre Dias de Faria"
+        - "Vitor Martins Soares"
+    - name: "P versus NP"
+      rank: 
+        - "8º de 31 times (Sede BR-MG-BH)"
+        - "171º de 524 times (BR)"
+      prizes:
+      students:
+        - "Gabriel Couto Assis"
+        - "Leonardo de Oliveira Campos"
+        - "Pedro Henrique Rodrigues Pereira"
+
+- name: "X Maratona Mineira de Programação"
+  date: "2023-05-27"
+  location:
+    pt_BR: "UFSJ (Campus Alto Paraopeba) - Ouro Branco, MG, Brasil"
+    en: "UFSJ (Campus Alto Paraopeba) - Ouro Branco, MG, Brazil"
+  teams:
+    - name: "Technomancers"
+      rank: 
+        - "16º de 61 times"
+      prizes:
+        - "Melhor time da Região Centro-Oeste de Minas"
+      students:
+        - "Gabriel de Souza Rosa"
+        - "Yuri Dimitre Dias de Faria"
+        - "Vitor Martins Soares"
+    - name: "P versus NP"
+      rank: 
+        - "31º de 61 times"
+      prizes:
+      students:
+        - "Gabriel Couto Assis"
+        - "Leonardo de Oliveira Campos"
+        - "Pedro Henrique Rodrigues Pereira"
+    - name: "#include&lt;chatgpt&gt;"
+      rank: 
+        - "41º de 61 times"
+      prizes:
+      students:
+        - "Alex Raimundo de Oliveira"
+        - "Daniel Alves Sanches"
+        - "Thaissa Vitória Guimarães Daldegan de Sousa"
+    - name: "goiaba++"
+      rank: 
+        - "4º de 9 times (Categoria Café com Leite)"
+      prizes:
+      students:
+        - "César Henrique Resende Soares"
+        - "Emanuel Vieira Tavares"
+        - "Vinícius Alves Pereira"
+
+- name: "XVIII Maratona SBC de Programação: Primeira Fase"
+  date: "2023-09-02"
+  location:
+    pt_BR: "Belo Horizonte, MG, Brasil"
+    en: "Belo Horizonte, MG, Brazil"
+  teams:
+    - name: "Technomancers"
+      rank: 
+        - "191º de 726 times (BR)"
+      prizes:
+      students:
+        - "Gabriel de Souza Rosa"
+        - "Yuri Dimitre Dias de Faria"
+        - "Vitor Martins Soares"
+    - name: "Bonde do Maravilha"
+      rank: 
+        - "256º de 726 times (BR)"
+      prizes:
+      students:
+        - "Gabriel Couto Assis"
+        - "Leonardo de Oliveira Campos"
+        - "Pedro Henrique Rodrigues Pereira"
+    - name: "++goiaba"
+      rank: 
+        - "271º de 726 times (BR)"
+      prizes:
+      students:
+        - "César Henrique Resende Soares"
+        - "Emanuel Vieira Tavares"
+        - "Vinícius Alves Pereira"
+    - name: "QUEBREI O BOCA 2023"
+      rank: 
+        - "375º de 726 times (BR)"
+      prizes:
+      students:
+        - "Alex Raimundo de Oliveira"
+        - "Daniel Alves Sanches"
+        - "Thaissa Vitória Guimarães Daldegan de Sousa"

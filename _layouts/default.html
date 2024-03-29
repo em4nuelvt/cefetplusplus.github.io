@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="{{ site.active_lang }}">
+
+<head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJDYHWDSMV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VJDYHWDSMV');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="description" content="{{ site.description[site.active_lang] }}">
+
+    {% I18n_Headers %}
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/icon/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/icon/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/icon/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/assets/images/icon/site.webmanifest' | relative_url }}">
+    <link rel="mask-icon" href="{{ '/assets/images/icon/safari-pinned-tab.svg' | relative_url }}" color="#000000">
+    <link rel="shortcut icon" href="{{ '/assets/images/icon/favicon.ico' | relative_url }}">
+    <meta name="msapplication-TileColor" content="#fafafa">
+    <meta name="msapplication-config" content="{{ '/assets/images/icon/browserconfig.xml' | relative_url }}">
+    <meta name="theme-color" content="#fafafa">
+
+    <link rel="stylesheet" href="{{ 'bootstrap/dist/css/bootstrap.min.css' | node_module_url }}" />
+    <link rel="stylesheet" href="{{ 'bootstrap-icons/font/bootstrap-icons.css' | node_module_url }}" />
+    <link rel="stylesheet" href="{{ '@fortawesome/fontawesome-free/css/all.min.css' | node_module_url }}" />
+    <link rel="stylesheet" href="{{ 'academicons/css/academicons.min.css' | node_module_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+
+    <title>{{ site.title }} :: {{ page.title | default: site.description[site.active_lang] }}</title>
+</head>
+
+<body>
+
+    <nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom shadow-sm">
+        <div class="container">
+            <a class="navbar-brand logo" href="{{ '/' | relative_url }}">
+                <div class="d-inline">
+                    <div class="logo-text-primary">
+                        <img class="" src="{{ '/assets/images/logo.png' | relative_url }}" height="30" class="d-inline-block align-top" alt="CEFET++ logo">
+                        CEFET++
+                    </div>
+                    <div class="logo-text-secondary">Turning coffee into code since 2022!</div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    {% for item in site.data.navigation %}
+                    {% if page.url == item.url %}
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ item.url | relative_url }}">{{ item.title[site.active_lang] }}</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title[site.active_lang] }}</a>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                    <li class="nav-item">
+                        <div class="d-none d-lg-inline-block mx-lg-2 text-muted vr"><span class="invisible">.</span></div>
+                        <i class="text-muted bi bi-translate d-inline-block me-0 pe-0"></i>
+                        {% for lang in site.languages %}
+                        <a class="nav-link d-inline-block ms-1 ms-lg-0 me-0 pe-0" {% static_href %}href="{% if lang == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ lang }}{{page.url}}{% endif %}"{% endstatic_href %}>{{ site.data.languages[lang] }}</a> 
+                        {% endfor %}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        {{ content }}
+    </main>
+
+    <footer id="footer" class="mt-5 py-5 bg-light">
+    {% include {{site.active_lang}}/footer.html %}
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="{{ 'jquery/dist/jquery.min.js' | node_module_url }}"></script>
+    <script src="{{ 'bootstrap/dist/js/bootstrap.bundle.min.js' | node_module_url }}"></script>
+    <script src="{{ 'jquery-parallax.js/parallax.min.js' | node_module_url }}"></script>
+    <script src="{{ 'sweet-scroll/sweet-scroll.min.js' | node_module_url }}"></script>
+    <script src="{{ '@iconify/iconify/dist/iconify.min.js' | node_module_url }}"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+</body>
+
+</html>
